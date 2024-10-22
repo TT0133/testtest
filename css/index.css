@@ -1,0 +1,351 @@
+@charset "UTF-8";
+
+/* リセットcss */
+abbr,
+address,
+article,
+aside,
+audio,
+b,
+blockquote,
+body,
+canvas,
+caption,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+samp,
+section,
+small,
+span,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: 0 0;
+}
+/* --------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+/* ベーススタイル ------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f4f8;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    opacity: 0; /* 透明にする */
+    transition: opacity 5s ease; /* 5秒でフェードイン */
+}
+
+/* メディアクエリ（タブレット以上） */
+@media (min-width: 768px) {
+    header {
+    }
+}
+
+/* メディアクエリ（デスクトップ以上） */
+@media (min-width: 1024px) {
+    header {
+    }
+}
+
+
+
+
+
+
+
+
+
+/* サークル詳細セクション --------------------------------------------------------*/
+.about {
+    padding: 40px 20px;
+    background-color: #f0f4f8; /* 明るい背景色 */
+    text-align: center;
+}
+
+.about h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #007bff; /* Aoki Bank風の青色 */
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    align-items: center;
+}
+
+.about-desc {
+    max-width: 1150px; /* 最大幅の指定 */
+    background-color: #ffffff; /* 白い背景 */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.about-desc h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #007bff; /* 青色 */
+}
+
+.about-desc p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px; /* 各段落の間隔 */
+    text-align: center;
+}
+
+
+
+.about-focus {
+    border: 3px solid blue; /* 青い3pxの枠線 */
+    background-color: #ADD8E6; /* 水色の背景 */
+    padding: 20px; /* コンテンツ内側の余白 */
+    margin: 20px 0; /* コンテンツ外側の余白（上下に余裕を持たせる） */
+    border-radius: 8px; /* 角を少し丸める */
+}
+
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .about h2 {
+        font-size: 2rem; /* 小さい画面ではフォントサイズを小さく */
+    }
+
+    .about-desc {
+        padding: 15px; /* パディングを減らす */
+    }
+
+    .about-desc h3 {
+        font-size: 1.5rem; /* 小さい画面ではフォントサイズを小さく */
+    }
+}
+
+@media (max-width: 480px) {
+    .about h2 {
+        font-size: 1.8rem; /* 更に小さい画面ではフォントサイズを小さく */
+    }
+
+    .about-desc h3 {
+        font-size: 1.4rem; /* 更に小さい画面ではフォントサイズを小さく */
+    }
+
+    .about-desc p {
+        font-size: 0.9rem; /* 更に小さい画面ではフォントサイズを小さく */
+    }
+}
+
+.about-desc a{
+    color: #007bff; /* リンクの通常の色 */
+    text-decoration: none; /* 下線を消す */
+    transition: color 0.3s; /* 色の変更を滑らかに */
+}
+
+.about-desc a:hover {
+    color: orange; /* ホバー時のリンクの色をオレンジに */
+    cursor: pointer; /* カーソルをポインターに変更 */
+}
+
+.about-desc-underline {
+    text-decoration: underline;
+}
+
+.about-desc-bold {
+    font-weight: bold;
+}
+
+
+
+
+
+
+.circle-details {
+    display: flex;
+    flex-wrap: wrap; /* コンテンツがオーバーフローした際に次の行に移動 */
+    justify-content: space-between; /* セクション間にスペースを配置 */
+    padding: 20px;
+    background-color: #f0f4f8;
+}
+
+.circle-detail {
+    background-color: #ffffff; /* 白い背景 */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 30%; /* 各セクションが30%の幅を持つように指定 */
+    max-width: 30%; /* 最大幅を30%に設定 */
+    text-decoration: none; /* リンクに下線を消す */
+    color: inherit; /* 親の文字色を継承 */
+}
+
+/* 画像のスタイル */
+.circle-image {
+    width: 100%; /* 幅を100%に設定して、親要素に合わせる */
+    height: auto; /* 高さは自動で調整 */
+    border-radius: 8px; /* 角を丸める */
+    margin-bottom: 15px; /* 下に余白を追加 */
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .circle-detail {
+        flex: 1 1 100%; /* スマホでは全幅を使うようにする */
+        max-width: 100%; /* 最大幅を100%に設定 */
+    }
+}
+
+
+
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーフッタースタイル */
+footer {
+    background-color: blue;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* フッター内のリンク */
+.footer-links {
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: underline; /* 下線を追加 */
+    font-family: 'Roboto', sans-serif; /* Google Web Fontsの適用 */
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #f0a500; /* ホバー時の色変更 */
+    text-decoration: underline; /* ホバー時にも下線を維持 */
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column; /* スマホでは縦に並べる */
+        align-items: center; /* 中央寄せ */
+    }
+}
+
+/* SNSアイコンのスタイル */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 2.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f0a500; /* ホバー時の色変更 */
+}
