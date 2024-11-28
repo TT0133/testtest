@@ -1,25 +1,15 @@
 @charset "UTF-8";
 
-
-
-
-
-
-/* グローバルスタイル */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
-
-h1 {
-    color: white;
+    background-color: #f0f4f8;
 }
 
 h2 {
     color: #007BFF;
+    font-size: 28px;    
 }
 
 header {
@@ -29,15 +19,9 @@ header {
     padding: 40px 0;
 }
 
-header p {
-    font-size: 18px;
-}
-
-.welcome-section {
-    padding: 60px 20px;
-    background-color: #fff;
+section {
+    padding: 20px 20px;
     margin: 20px 0;
-    border-bottom: 4px solid #007BFF;
 }
 
 .container {
@@ -47,49 +31,32 @@ header p {
     text-align: center;
 }
 
-h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
 p {
     font-size: 18px;
     margin-bottom: 20px;
 }
 
-/* イベント日程リスト */
 .event-list {
     list-style: none;
     padding: 0;
 }
 
 .event-list li {
-    background-color: #f0f0f0;
+    background-color: white;
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
+    border: 1px solid black;
 }
 
-/* メッセージセクション */
-.message {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+a {
+    transition: color 0.3s ease;
 }
 
-.message img {
-    border-radius: 50%;
-    margin-right: 20px;
-    width: 100px;
-    height: 100px;
+a:hover {
+    color: #f0a500;
 }
 
-.message p {
-    font-size: 16px;
-    color: #333;
-}
-
-/* Q&Aセクション */
 .faq {
     text-align: left;
 }
@@ -98,24 +65,14 @@ p {
     background-color: #007BFF;
     color: white;
     padding: 10px;
-    cursor: pointer;
     margin: 0;
 }
 
 .answer {
-    display: none;
     padding: 10px;
-    background-color: #f0f0f0;
-    border-left: 5px solid #007BFF;
     margin-bottom: 10px;
 }
 
-
-
-
-
-
-/* レスポンシブ対応 */
 @media (max-width: 768px) {
     .message {
         flex-direction: column;
@@ -135,9 +92,6 @@ p {
     }
 }
 
-
-
-/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーフッタースタイル */
 footer {
     background-color: blue;
     color: #fff;
@@ -153,7 +107,6 @@ footer {
     align-items: center;
 }
 
-/* フッター内のリンク */
 .footer-links {
     list-style: none;
     margin-top: 10px;
@@ -168,26 +121,24 @@ footer {
 
 .footer-links a {
     color: #fff;
-    text-decoration: underline; /* 下線を追加 */
-    font-family: 'Roboto', sans-serif; /* Google Web Fontsの適用 */
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #f0a500; /* ホバー時の色変更 */
-    text-decoration: underline; /* ホバー時にも下線を維持 */
+    color: #f0a500;
+    text-decoration: underline;
 }
 
-/* レスポンシブ対応 */
 @media (max-width: 768px) {
     .footer-links {
-        flex-direction: column; /* スマホでは縦に並べる */
-        align-items: center; /* 中央寄せ */
+        flex-direction: column;
+        align-items: center;
     }
 }
 
-/* SNSアイコンのスタイル */
 .social-icons {
     margin-top: 20px;
     display: flex;
@@ -201,5 +152,5 @@ footer {
 }
 
 .social-icons a:hover {
-    color: #f0a500; /* ホバー時の色変更 */
+    color: #f0a500;
 }

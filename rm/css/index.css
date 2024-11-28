@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f0f4f8;
+    background-color: #ddffe4;
 }
 
 /* header */
@@ -14,7 +14,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f0f4f8;
+    background-color: #ddffe4;
 }
 
 .header-container {
@@ -28,27 +28,15 @@ header {
     height: auto;
     max-width: 100%;
     object-fit: cover;
-    opacity: 0; /* 透明にする */
-    transition: opacity 5s ease; /* 5秒でフェードイン */
 }
 
-.header-image-mb{
-    display: none;
-}
-
-@media (max-width:560px) {
-    .header-image{
-        display: none;
+@media (min-width: 768px) {
+    header {
     }
+}
 
-    .header-image-mb {
-        z-index: 10000;
-        display: block;
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-        object-fit: cover;
-        transition: opacity 5s ease; /* 5秒でフェードイン */
+@media (min-width: 1024px) {
+    header {
     }
 }
 /* header end */
@@ -56,7 +44,7 @@ header {
 /* about */
 .about {
     padding: 40px 20px;
-    background-color: #f0f4f8;
+    background-color: #ddffe4;
     text-align: center;
 }
 
@@ -64,7 +52,7 @@ header {
     font-family: 'Roboto', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #007bff;
+    color: #25a000;
 }
 
 .about-content {
@@ -125,7 +113,7 @@ header {
 }
 
 .about-desc a{
-    color: #007bff;
+    color: #25a000;
     text-decoration: none;
     transition: color 0.3s; /* 色の変更を滑らかに */
 }
@@ -145,7 +133,7 @@ header {
 /* about end */
 
 /* details */
-.circle-details {
+.articles {
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -154,7 +142,7 @@ header {
     max-width: 1200px;
 }
 
-.circle-detail {
+.article {
     background: white;
     flex: auto;
     width: 44%;
@@ -164,28 +152,27 @@ header {
     box-shadow: 0 2px 10px #777777;
 }
 
-.circle-image {
+.article-image {
     width: 94%;
     height: auto;
     border-radius: 8px;
     margin: 3%;
 }
 
-.circle-detail > h3, p {
+.article > h3, p {
     margin: 3%;
 }
 
 @media (max-width: 768px) {
-    .circle-detail {
+    .article {
         flex: 1 1 100%;
-        max-width: 100%;
     }
 }
 /* details end */
 
 /* footer */
 footer {
-    background-color: blue;
+    background-color: green;
     color: #fff;
     padding: 20px 0;
     text-align: center;

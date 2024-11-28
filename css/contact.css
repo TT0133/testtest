@@ -1,14 +1,10 @@
 @charset "UTF-8";
 
-
-
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f4f8;
 }
 
 header {
@@ -24,16 +20,13 @@ h1 {
 }
 
 .contact-section, .map-section {
-    padding: 40px 0px;
-    background-color: #fff;
-    margin: 20px 20px;
+    padding: 20px 30px;
     text-align: center;
-    border-bottom: 4px solid #007BFF;
 }
 
 h2 {
     font-size: 28px;
-    margin-bottom: 20px;
+    color: #007BFF;
 }
 
 p {
@@ -43,10 +36,12 @@ p {
 a {
     color: #007BFF;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #f0a500;
 }
 
 .map-container {
@@ -54,7 +49,6 @@ a:hover {
     margin: 0 auto;
 }
 
-/* レスポンシブ対応 */
 @media (max-width: 768px) {
     h1, h2 {
         font-size: 24px;
@@ -65,9 +59,6 @@ a:hover {
     }
 }
 
-
-
-/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーフッタースタイル */
 footer {
     background-color: blue;
     color: #fff;
@@ -83,7 +74,6 @@ footer {
     align-items: center;
 }
 
-/* フッター内のリンク */
 .footer-links {
     list-style: none;
     margin-top: 10px;
@@ -98,26 +88,24 @@ footer {
 
 .footer-links a {
     color: #fff;
-    text-decoration: underline; /* 下線を追加 */
-    font-family: 'Roboto', sans-serif; /* Google Web Fontsの適用 */
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #f0a500; /* ホバー時の色変更 */
-    text-decoration: underline; /* ホバー時にも下線を維持 */
+    color: #f0a500;
+    text-decoration: underline;
 }
 
-/* レスポンシブ対応 */
 @media (max-width: 768px) {
     .footer-links {
-        flex-direction: column; /* スマホでは縦に並べる */
-        align-items: center; /* 中央寄せ */
+        flex-direction: column;
+        align-items: center;
     }
 }
 
-/* SNSアイコンのスタイル */
 .social-icons {
     margin-top: 20px;
     display: flex;
@@ -131,5 +119,5 @@ footer {
 }
 
 .social-icons a:hover {
-    color: #f0a500; /* ホバー時の色変更 */
+    color: #f0a500;
 }
